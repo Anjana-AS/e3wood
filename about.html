@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>E3 WOODS</title>
+  <style>
+   .button1 {
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      margin: 12px 12px;
+      cursor: pointer;
+      background-color: #49c24d;
+      float: right;
+      position: relative;
+      bottom:40px;
+      right: 130px;
+      width: 190px;
+      height: 37px;
+      border-radius: 5px;
+ font-weight: bold;
+    }
+
+    .button2 {
+      border: none;
+      background: none;
+      color: rgba(111, 141, 28, 0.945);
+      padding: 10px 10px;
+      text-align: center;
+      font-weight: bold;
+      outline: none;
+      font-size: 12.5px;
+      cursor: pointer;
+      float: right;
+      position: relative;
+      bottom: -20px;
+      right: -160px;
+      font-weight:800;
+    }
+
+    #button1 {
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      color: green;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.9s, color 0.9s, border-color 0.9s;
+    }
+
+    .button1:hover {
+      background-color: white;
+      color: green;
+      border: 1.5px solid green;
+    }
+
+    .button1:focus {
+      outline: none;
+      background-color: green;
+      color: white;
+    }
+
+    .button2:hover {
+      color: rgb(139, 47, 4);
+    }
+
+
+    header {
+      width: 100%;
+      height: 0px;
+      background-color: #ffffff;
+
+
+      .header-box {
+        border-bottom: 2px solid rgba(151, 219, 23, 0.747);
+        border-top: 4px solid rgb(122, 158, 24);
+        height: 70px;
+        background: linear-gradient(to bottom , #ffffff 65%,#bbdde0c9);
+        padding: 20px;
+        width: 1350px;
+        background-blend-mode: overlay;
+        background-size: cover;
+
+      }
+
+      .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    body {
+  position: absolute;
+  right: 10px;
+  width: 100%;
+  background-color: hwb(43 67% 10% / 0.726);
+overflow-x: hidden;
+  font-family: sans-serif;
+}
+    .floatLeft {
+      float: left;
+
+    }
+
+    .logo1 {
+      margin-top: -220px;
+      margin-left: -585px;
+      width: 550px;
+      height: auto;
+      border: none;
+      border-top: 3px solid rgba(138, 55, 16, 0.911);
+      padding-top: 10px;
+    }
+
+    .about {
+      font-size: 22px;
+      color: #6b9211e3;
+      position: absolute;
+      font-size: 21px;
+      top: 120px;
+      left: 115px;
+
+    }
+    .paragraphstyle {
+  width: 600px;
+  float: left;
+  margin-top: -58px;
+  margin-left: 700px;
+  padding-top: 100px;
+  word-spacing: 2px;
+  height: 200px; 
+  font-size: 16px;
+    line-height: 1.7em;
+    color: #64462e;
+    text-align: justify
+}
+
+
+.left-image {
+  position: relative;
+  left: 70px;
+  top: -36px;
+  height: 70px;
+}
+    .right-image {
+      float: right;
+      position: absolute;
+      top: 10px;
+      left: 620px;
+    }
+
+    footer {
+  background-color: #1a1919f6;
+  color: #fff;
+  padding: 47px;
+  top: 590px;
+  width: 95%;
+  height: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 0 auto;
+}
+
+    .footer-image {
+      size: 10px;
+      position: absolute;
+      bottom: 33px;
+      left: 90px;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 15px;
+      left: 90px;
+    color: #dedce7dc;
+    font-size: 14px;
+    }
+
+   
+    .footer-icons {
+  position: absolute;
+  right: 90px; 
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  top: -16px;
+  font-size: 16px;
+  color: #ffffff2d;
+}
+.footer-icons li:hover i::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  visibility: visible;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border-radius: 5px;
+}
+.footer-icons li i {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons li i:hover {
+  transform: scale(1.2);
+}
+  </style>
+
+<script>
+ function redirectToHomePage() {
+  window.location.href = "  D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/home.html";
+
+}
+
+function redirectToAboutPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/about.html";
+}
+
+function redirectToProductsPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/products.html";
+}
+
+function redirectToTechnologyPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/technology.html";
+}
+
+function redirectToPhotogalleryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/photo%20gallery.html";
+}
+
+function redirectToMissionPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/mission.html";
+}
+
+function redirectToEnquiryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/enquiry.html";
+}
+
+</script>
+
+</head>
+<header class="main-header">
+  <div class="header-box">
+    <h1>
+
+      <button class="button button1">Enquire Now</button>
+
+      <button id="enquiryButton" class="button button2" onclick="redirectToEnquiryPage()">ENQUIRY</button>
+      <button id="missionButton" class="button button2"onclick="redirectToMissionPage()">MISSION</button>
+      <button id="photogalleryButtton" class="button button2" onclick="redirectToPhotogalleryPage()">PHOTO GALLERY</button>
+      <button id="technologyButton" class="button button2" onclick="redirectToTechnologyPage()">TECHNOLOGY</button>
+      <button id="productsButton" class="button button2" onclick="redirectToProductsPage()">PRODUCTS</button>
+      <button id="aboutButton" class="button button2" onclick="redirectToAboutPage()">ABOUT US</button>
+      <button id="homeButton" class="button button2" onclick="redirectToHomePage()">HOME</button>
+      
+  
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\logo.png" alt="logo1" class="left-image">
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\save.png" alt="logo2" class="right-image">
+      
+    </h1>
+  </div>
+</header>
+
+<body>
+  <div style="height: 100px">
+    <div class="paragraphstyle" style="color: rgba(88, 45, 10, 0.788);" style="justify-content: center;">
+      <p style="justify-content: center;">
+
+        E3 WOOD is a Manufacturer of Specialty Wood Composite Products with Modified materials in WPC
+        (Wood Polymer Composite).<br>
+        WPC is a composite blend mixture of Waste Wood , Agriculture waste, Cellulose waste and polymer as a
+        binder with some functional additive. Rare trees in tropical rainforests require several decades to reach
+        full maturity.
+        More than 30 years ago, observing the destruction caused by mankind in the Amazon and other rain
+        forests.<br>
+        Wood has been a standard building material for centuries. However, with the rise of global warming and
+        deforestation,
+        wood-alternatives are increasing in popularity and use. Thanks to modern technology, we have
+        been able to create a product that will decrease the need of wood materials and avoid cutting tree,
+        Contribute to avoid Global warming.<br>
+        E3 Wood is founded by Ganesh. M, an Engineering Graduate in Polymer Science & Technology from University of
+        Mysore,
+        Mysore. With a wide experience in Polymer Research, Development, Technical Solutions and marketing. E3
+        Wood
+        is having highly qualified experience Technologist to produce high quality and consistent WPC products.<br>
+        The objective of the company is to provide effective solutions and Ecofriendly Wood to the Wood users,
+        Interior & Exterior Designers, wood converters,Furniture makers, Builders. The solutions are in the form
+        Extrusion
+        profiles with modified properties like, precolor , UV stabilization , predesigned Extrusion profiles and
+        complete
+        solution to meet customers unique specification and requirements
+        <br>
+      <p></p>
+      <b><span style="color: rgb(26, 12, 1);">Objective:</span></b><br>
+      <p></p>
+      The <b><span style="color: rgb(26, 12, 1);">Objective</span></b> of the company is to provide effective solutions
+      to the Wood<br> users, wood converters,
+      Furniture makers, Builders , Interior & Exterior Designers. The solutions are in the form of profiles with
+      modified
+      properties like, precolor , UV stabilized ,predesigned Extrusion profiles and complete solution to meet
+      customers
+      unique specification and requirements . Specialty Extrusion Profiles in Wood plastics Composites (WPC) became
+      a burgeoning, fast-growing, market demand for these hybrids has been on the increase, especially in
+      Building
+      & Construction , Interiors, Garden ,outdoor products, where these products are replacing ,Natural Wood
+      ,Aluminum
+      and other heavy weight materials.
+      </p>
+
+    </div>
+    <div class="paragraphstyle">
+      <div class="floatLeft">
+
+
+
+        <p class="about">ABOUT US</p>
+        <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\protect-environment.jpg" alt="Logo 1" width="150" height="150"
+          class="logo1">
+
+        </hr>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ul class="footer-icons">
+      <li>
+        <i class="fab fa-facebook" title="Facebook"></i>
+      </li>
+      <li>
+        <i class="fab fa-twitter" title="Twitter"></i>
+      </li>
+      <li>
+        <i class="fab fa-vimeo" title="Vimeo"></i>
+      </li>
+      <li>
+        <i class="fab fa-tumblr" title="Tumblr"></i>
+      </li>
+      <li>
+        <i class="fab fa-delicious" title="Delicious"></i>
+      </li>
+    </ul>
+
+    </div>
+    <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\foot_logo.png" alt="logo" class="footer-image">
+    <span style="color: rgb(208, 208, 247); display: block; text-align: left; position: absolute; bottom: 100; left: 1;"
+      class="footer-text">@
+      2016 E3 Extrusion Inc. All Rights Reserved.</span>
+
+  </footer>
+</body>
+
+</html>

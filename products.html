@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <title>E3 WOODS</title>
+    <style>
+        .button1 {
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      margin: 12px 12px;
+      cursor: pointer;
+      background-color: #49c24d;
+      float: right;
+      position: relative;
+      bottom:40px;
+      right: 130px;
+      width: 190px;
+      height: 37px;
+      border-radius: 5px;
+ font-weight: bold;
+    }
+
+    .button2 {
+      border: none;
+      background: none;
+      color: rgba(111, 141, 28, 0.945);
+      padding: 10px 10px;
+      text-align: center;
+      font-weight: bold;
+      outline: none;
+      font-size: 12.5px;
+      cursor: pointer;
+      float: right;
+      position: relative;
+      bottom: -21px;
+      right: -118px;
+      font-weight:800;
+    }
+
+    #button1 {
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      color: green;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.9s, color 0.9s, border-color 0.9s;
+    }
+
+    .button1:hover {
+      background-color: white;
+      color: green;
+      border: 1.5px solid green;
+    }
+
+    .button1:focus {
+      outline: none;
+      background-color: green;
+      color: white;
+    }
+
+    .button2:hover {
+      color: rgb(139, 47, 4);
+    }
+    header {
+      width: 100%;
+      height: 0px;
+      background-color: #ffffff;
+
+
+      .header-box {
+        border-bottom: 2px solid rgba(151, 219, 23, 0.747);
+        border-top: 4px solid rgb(122, 158, 24);
+        height: 70px;
+        width: 1350px;
+       margin-left: -10px; 
+        background: linear-gradient(to bottom , #ffffff 65%,#bbdde0c9);
+        padding: 20px;
+        background-blend-mode: overlay;
+        background-size: cover;
+
+      }
+
+      .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+        body {
+            position: absolute;
+            left: 0px;
+            margin-top: 0;
+            padding-top: 0;
+            width: 100%;
+            height: 3100px;
+            background-color: hwb(43 67% 10% / 0.726);
+          overflow-x: hidden;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .floatLeft {
+            float: left;
+        }
+
+        
+    .left-image {
+  position: relative;
+  left: 70px;
+  top: -36px;
+  height: 70px;
+}
+    .right-image {
+      float: right;
+      position: absolute;
+      top: 10px;
+      left: 620px;
+    }
+     
+ 
+
+    
+    footer {
+  background-color: #1a1919f6;
+  color: #fff;
+  padding: 70px;
+  width: 90%;
+  height: 2px;
+  left: -19px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 0 auto;
+  margin-top: 70px;
+  
+}
+
+    .footer-image {
+      size: 10px;
+      position: absolute;
+      bottom: 45px;
+      left: 80px;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 30px;
+      left: 75px;
+    color: #c2c3c4f3;
+    font-size: 14px;
+    }
+
+
+    .footer-icons {
+  position: absolute;
+  right: 85px; 
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  top: -5px;
+  font-size: 16px;
+  color: #ffffff2d;
+}
+.footer-icons li:hover i::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  visibility: visible;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border-radius: 5px;
+}
+.footer-icons li i {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons li i:hover {
+  transform: scale(1.2);
+}
+  
+    .active-button {
+      
+        height: 30px;
+        color: #fcf5f5;
+        background-color: #333;
+        border-radius: 3px;
+        font-weight: 800;
+        font-size: 11px;
+      font-family: 'Open Sans', sans-serif;
+        transition: background-color 0.1s;
+        line-height: 20px;
+       cursor: pointer;
+       border: 0;
+    padding: 6px 10px;
+    margin-bottom: 0;
+    margin-left: .3em;
+    }
+
+   
+    .active-button:active {
+      background-color:  #d00b01;
+    }
+</style>
+
+<script>
+ function redirectToHomePage() {
+  window.location.href = "  D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/home.html";
+
+}
+
+function redirectToAboutPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/about.html";
+}
+
+function redirectToProductsPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/products.html";
+}
+
+function redirectToTechnologyPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/technology.html";
+}
+
+function redirectToPhotogalleryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/photo%20gallery.html";
+}
+
+function redirectToMissionPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/mission.html";
+}
+
+function redirectToEnquiryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/enquiry.html";
+}
+</script>
+
+</head>
+<header class="main-header">
+    <div class="header-box">
+        <h1>
+           
+          <button class="button button1">Enquire Now</button>
+
+          <button id="enquiryButton" class="button button2" onclick="redirectToEnquiryPage()">ENQUIRY</button>
+          <button id="missionButton" class="button button2"onclick="redirectToMissionPage()">MISSION</button>
+          <button id="photogalleryButtton" class="button button2" onclick="redirectToPhotogalleryPage()">PHOTO GALLERY</button>
+          <button id="technologyButton" class="button button2" onclick="redirectToTechnologyPage()">TECHNOLOGY</button>
+          <button id="productsButton" class="button button2" onclick="redirectToProductsPage()">PRODUCTS</button>
+          <button id="aboutButton" class="button button2" onclick="redirectToAboutPage()">ABOUT US</button>
+          <button id="homeButton" class="button button2" onclick="redirectToHomePage()">HOME</button>
+          
+          <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\logo.png" alt="logo1" class="left-image">
+          <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\save.png" alt="logo2" class="right-image">
+          
+        </h1>
+    </div>
+</header>
+
+<div style="text-align: left; padding-left: 70px; position:relative; bottom:-138px;">
+  <button class="active-button">ALL</button>
+  <button class="active-button">PRODUCTS</button>
+  <button class="active-button">COLORS</button>
+  <button class="active-button">TEXTURE</button>
+  <button class="active-button">ACCESSORIES</button>
+</div>
+
+<div class="image-container" style="width: 1300px; display: inline-block;     line-height: 22px;
+margin-bottom: 10px;padding-top: 70px; padding-left: 40px;color: #313131;font-weight:100;font-size: 14px; font-family: 'Open Sans', sans-serif;">
+
+ 
+
+    <figure style="display: inline-block;" >
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\01.png"  style="width: 260px;margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+      <figcaption style="text-align:center; ">01 - 230MMX12MM</figcaption>
+    </figure>
+
+
+      <figure style="display: inline-block; ">
+          <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\02.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+          <figcaption style="text-align: center;">E3W02</figcaption>
+      </figure>
+
+      <figure style="display: inline-block;">
+          <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\03.png"  style="width: 260px;  margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+          <figcaption style="text-align: center;">E3W03 - 120 MM X 120MM</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; ">
+          <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\04.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+          <figcaption style="text-align: center;">E3W04 - 25MM X 150MM DECKING</figcaption>
+      </figure>  
+              
+      <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\04a.png"  style="width: 260px; margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W04A -25MM X 145MM DECKING</figcaption>
+          </figure>
+      
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\04b.png"  style="width: 260px; margin-left: -30px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">  
+            <figcaption style="text-align: center;">E3W04B - 25MM X 145MM</figcaption>
+          </figure>
+
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\04c.jpg"  style="width: 260px; margin-left: -50px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W04C - 25MM X 145MM</figcaption>
+         </figure>
+
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\04s.png" style="width: 260px; margin-left:  -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W04S -25MM X 150MM SOLID</figcaption>
+          </figure>
+       
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\05.png"  style="width: 260px; margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;"> 
+            <figcaption style="text-align: center;">E3W05-20MM X100MM</figcaption>
+          </figure>
+        
+             
+              
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\05a.png"  style="width: 260px; margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W05A -20MM X 100MM SOLID</figcaption>
+          </figure>
+       
+
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\06.png"  style="width: 260px; margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W06-100MM X 50MM</figcaption>
+          </figure>
+    
+             
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\07.png"  style="width: 260px;  margin-right: -55px; box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W07 - 125MM X 75MM( DOOR FRAME)</figcaption>
+          </figure>
+     
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\08.png" style="width: 260px;margin-right: -55px; box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;"> 
+            <figcaption style="text-align: center;">E3W08 - 110MM X 55MM(DOOR FRAME)</figcaption>
+          </figure>
+     
+
+              
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\08a.png"  style="width: 260px; margin-left: -55px; box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W08A - 110MM X 55MM(WINDOW)</figcaption>
+          </figure>
+       
+
+              
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\08b.jpg" style="width: 260px; margin-left: -85px; box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W08B - 75MM X 55MM(RAILING)</figcaption>
+          </figure>
+      
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\09.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W09-150MM X 12MM( WALL PANEL)</figcaption>
+          </figure>
+      
+        
+             
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\10.png" style="width: 260px; margin-left: -45px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W10- 230MM X 75MM (DOOR FRAME)</figcaption>
+          </figure>
+        
+        
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\11.png"  style="width: 260px; margin-left: -99px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;"> 
+            <figcaption style="text-align: center;">E3W11 -300MMX 300MM (CLICK TILE)</figcaption>
+          </figure>
+    
+
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\12.png" style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W12 -100MM X 32MM</figcaption>
+          </figure>
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\13.png" style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W13 -65MM X 32MM</figcaption>
+          </figure>
+      
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\14.png"  style="width: 260px;  margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W14 -70MM X 40MM( DOOR FRAME )</figcaption>
+          </figure>
+    
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\15.png" style="width: 260px; margin-left: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W15 - 50MM X 5MM</figcaption>
+          </figure>
+    
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\16.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W16 - 55 MM X 120MM</figcaption>
+          </figure>
+       
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\17.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W17 - 12MM X 73MM</figcaption>
+          </figure>
+       
+        
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\17a.jpg"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W17A - 12MM X 35MM</figcaption>
+          </figure>
+      
+        
+            
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\18.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W18 - FLUTE WALL PANEL</figcaption>
+          </figure>
+       
+        
+            
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\19.png"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W19-120 MM X 55MM</figcaption>
+          </figure>
+      
+        
+            
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\20.png"  style="width: 260px;  margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W20 -150MM X 25MM</figcaption>
+          </figure>
+      
+        
+            
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\21.jpg"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3W21-40MM X 25MM</figcaption>
+          </figure>
+    
+    
+            <figure style="display: inline-block; ;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\Dark brown.jpg"  style="width: 260px;margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;"> 
+            
+            <figcaption style="text-align: center;">DARK BROWN</figcaption>
+          </figure>
+      
+
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\Darkgrey.jpg" style="width: 260px;margin-right: -55px;   box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">DARK GREY</figcaption>
+          </figure>
+      
+
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\teakbrown.jpg"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">TEAK BROWN</figcaption>
+          </figure>
+      
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\e3p02 (1).jpg"  style="width: 260px;  margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3P02</figcaption>
+          </figure>
+     
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\terracotta.jpg"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">TERRACOTTA</figcaption>
+          </figure>
+        
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\wood-grains-1.jpg" style="width: 260px;margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">WOOD GRAIN01</figcaption>
+          </figure>
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\wood-grains-2.jpg" style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3 WOOD GRAIN2</figcaption>
+          </figure>
+        
+        
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\wood-grains-3.jpg"  style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3 WOOD GRAIN3</figcaption>
+          </figure>
+    
+        
+          <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\e3p01.jpg" style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3P01</figcaption>
+          </figure>
+        
+        
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\e3p03.jpg"  style="width: 260px;margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3P03</figcaption>
+          </figure>
+    
+        
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\e3ss01.jpg"  style="width: 260px;  margin-right: -55px; box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3SS01</figcaption>
+          </figure>
+        
+            <figure style="display: inline-block;">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\e3ss02.jpg"  style="width: 260px; margin-right: -55px; box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3SS02</figcaption>
+          </figure>
+    
+
+            <figure style="display: inline-block; ">
+            <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\e3w05a2.jpg"
+           style="width: 260px; margin-right: -55px;  box-shadow: 1px 8px 11px -6px rgba(0,0,0,0.75); border-radius: 3px;">
+            <figcaption style="text-align: center;">E3RAFTER</figcaption>
+          </figure>
+     
+           
+    </div>
+
+        <footer>
+          <ul class="footer-icons">
+            <li>
+              <i class="fab fa-facebook" title="Facebook"></i>
+            </li>
+            <li>
+              <i class="fab fa-twitter" title="Twitter"></i>
+            </li>
+            <li>
+              <i class="fab fa-vimeo" title="Vimeo"></i>
+            </li>
+            <li>
+              <i class="fab fa-tumblr" title="Tumblr"></i>
+            </li>
+            <li>
+              <i class="fab fa-delicious" title="Delicious"></i>
+            </li>
+          </ul>
+    
+          <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\foot_logo.png" alt="logo" class="footer-image">
+            <span
+                style="color: rgb(208, 208, 247); display: block; text-align: left; position: absolute; bottom: 100; left: 1;"
+                class="footer-text">@
+                2016 E3 Extrusion Inc. All Rights Reserved.</span>
+
+        </footer>
+        </body>
+
+</html>

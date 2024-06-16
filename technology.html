@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>E3 WOODS</title>
+  <style>
+    .button1 {
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      margin: 12px 12px;
+      cursor: pointer;
+      background-color: #49c24d;
+      float: right;
+      position: relative;
+      bottom:40px;
+      right: 130px;
+      width: 190px;
+      height: 37px;
+      border-radius: 5px;
+ font-weight: bold;
+    }
+
+    .button2 {
+      border: none;
+      background: none;
+      color: rgba(111, 141, 28, 0.945);
+      padding: 10px 10px;
+      text-align: center;
+      font-weight: bold;
+      outline: none;
+      font-size: 12.5px;
+      cursor: pointer;
+      float: right;
+      position: relative;
+      bottom: -20px;
+      right: -140px;
+      font-weight:800;
+    }
+
+    #button1 {
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      color: green;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.9s, color 0.9s, border-color 0.9s;
+    }
+
+    .button1:hover {
+      background-color: white;
+      color: green;
+      border: 1.5px solid green;
+    }
+
+    .button1:focus {
+      outline: none;
+      background-color: green;
+      color: white;
+    }
+
+    .button2:hover {
+      color: rgb(139, 47, 4);
+    }
+
+    header {
+      height: 0px;
+      background-color: #ffffff;
+      width: 1350px;
+      
+
+      .header-box {
+        border-bottom: 2px solid rgba(151, 219, 23, 0.747);
+        border-top: 4px solid rgb(122, 158, 24);
+        height: 70px;
+        margin: -7px;
+        margin-left: -10px;
+        background: linear-gradient(to bottom , #ffffff 65%,#bbdde0c9);
+        padding: 20px;
+        background-blend-mode: overlay;
+        background-size: cover;
+
+      }
+
+      .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+
+
+    body {
+      overflow-x: hidden;  
+      background-color: hwb(43 67% 10% / 0.726);
+    }
+
+    .floatLeft {
+      float: left;
+
+    }
+
+    .logo1 {
+      margin-top: -175px;
+      margin-left: -1610px;
+      width: 550px;
+      height: auto;
+      border: none;
+      border-top: 3px solid rgba(138, 55, 16, 0.911);
+      padding-top: 10px;
+    }
+
+    .about {
+      font-size: 21px;
+      color: #40570cde;
+      position: absolute;
+      top: 110px;
+      left: 60px;
+      font-family: sans-serif;
+    }
+
+    .paragraphstyle {
+      width: 750px;
+      float: right;
+      font-size: medium;
+      margin-top: 80px;
+      height: 400px;
+      margin-right: -1080px;
+      padding-top: 150px;
+      word-spacing: 1.3px;
+      line-height: 1.7;
+
+    }
+
+    
+    .left-image {
+  position: relative;
+  left: 70px;
+  top: -37px;
+  height: 70px;
+}
+    .right-image {
+      float: right;
+      position: absolute;
+      top: 10px;
+      left: 620px;
+    }
+
+    footer {
+  background-color: #1a1919f6;
+  color: #fff;
+  padding: 47px;
+  width: 100%;
+  height: 3.5px;
+  top: 1270px;
+  left: -19px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 0 auto;
+}
+
+    .footer-image {
+      size: 10px;
+      position: absolute;
+      bottom: 27px;
+      left: 150px;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 3px;
+      left: 150px;
+    color: #dedce7dc;
+    font-size: 14px;
+    }
+
+    .footer-icons {
+  position: absolute;
+  right: 110px; 
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  top: -16px;
+  font-size: 16px;
+  color: #ffffff2d;
+}
+.footer-icons li:hover i::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  visibility: visible;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+border-radius: 5px;
+}
+.footer-icons li i {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-icons li i:hover {
+  transform: scale(1.2);
+}
+  </style>
+
+<script>
+ function redirectToHomePage() {
+  window.location.href = "  D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/home.html";
+
+}
+
+function redirectToAboutPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/about.html";
+}
+
+function redirectToProductsPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/products.html";
+}
+
+function redirectToTechnologyPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/technology.html";
+}
+
+function redirectToPhotogalleryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/photo%20gallery.html";
+}
+
+function redirectToMissionPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/mission.html";
+}
+
+function redirectToEnquiryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/enquiry.html";
+}
+</script>
+  
+</head>
+<header class="main-header">
+  <div class="header-box">
+    <h1>
+
+      <button class="button button1">Enquire Now</button>
+
+      <button id="enquiryButton" class="button button2" onclick="redirectToEnquiryPage()">ENQUIRY</button>
+      <button id="missionButton" class="button button2"onclick="redirectToMissionPage()">MISSION</button>
+      <button id="photogalleryButtton" class="button button2" onclick="redirectToPhotogalleryPage()">PHOTO GALLERY</button>
+      <button id="technologyButton" class="button button2" onclick="redirectToTechnologyPage()">TECHNOLOGY</button>
+      <button id="productsButton" class="button button2" onclick="redirectToProductsPage()">PRODUCTS</button>
+      <button id="aboutButton" class="button button2" onclick="redirectToAboutPage()">ABOUT US</button>
+      <button id="homeButton" class="button button2" onclick="redirectToHomePage()">HOME</button>
+
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\logo.png" alt="logo1" class="left-image">
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\save.png" alt="logo2" class="right-image">
+      
+      
+    </h1>
+  </div>
+</header>
+
+<body>
+  <div style="height: 100px">
+    <div class="paragraphstyle" style="color: rgba(27, 26, 24, 0.788);">
+
+
+
+
+      <style>
+        .heading {
+          margin-top: -105px;
+          margin-left: -45px;
+          font-size:20px;
+          color: #57851c;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      </style>
+      <p class="heading">
+        <strong> Wood Polymer Composites Characteristics <br></strong>
+      </p>
+      <p></p>
+      <br>
+      <style>
+        .para {
+          margin-top: -8px;
+          margin-left: -45px;
+          font-size:14px;
+          color: #0d0e0d;
+          font-family:sans-serif;
+          line-height: 35px;
+    
+        }
+      </style>
+        <p class="para">
+      WATER RESISTANCE AND TERMITE RESISTANCE<br>
+      NO CRACK AND EASY MAINTENANCE<br>
+      GOOD DIMENSIONAL STABILITY, SLIP RESISTANCE ( WET OR DRY)<br>
+      CUTS,RESISTANCE TO DECAY<br>
+      PAINTING NOT REQUIRE ( CAN BE PAINTABLE AND POLISHABLE)<br>
+      OUTSTANDING SCREW AND NAIL RETENTION<br>
+      UV RESISTANCE AND LONG LIFE<br>
+      SHOCK RESISTANCE & ELECTRICAL INSULATOR<br>
+      FUNGAL & ROT RESISTANCE<br>
+      THERMAL INSULATION<br>
+      ENVIRONMENT FRIENDLY & 100% RECYCLABLE<br>
+      SOUND ABSORBING, OUTSTANDING PERFORMANCE IN ENERGY-SAVING ETC.<br>
+      </p>
+
+      <style>
+        .paragraph {
+          margin-top: 85px;
+          margin-left: -580px;
+          color: #3d1e09e8;
+        }
+      </style>
+
+      <p class="paragraph">
+        In an age, when science has successfully attempted to increase life-expectancy of man, man ' s own desire to
+        create
+        super materials which can withstand extreme<br> heat or cold and yet can be elastic enough to mould it in
+        various shapes
+        has led to WPC.<br>
+
+        Rare trees in tropical rainforests require several decades to reach full maturity. More than 30 years ago,
+        observing the destruction caused by mankind in the Amazon<br> and other rain forests, Wood has been a standard
+        building,
+        Furniture,Decking,Railing & interior material for centuries.
+        However, with the rise of global warming and<br> deforestation, wood-alternatives are increasing in popularity
+        and use.
+        Thanks to modern technology, we have been able to create a product that will decrease the<br> need for wood
+        materials.<br>
+
+        Let's face it-wood deteriorates. It cracks, it rots, its splinters, it is prone to mildew and mold the list goes
+        on.
+        As an organic material, it's a breeding ground for bacteria<br> and a hearty meal for termites and other
+        insects.
+        From an environmental standpoint, wood cannot be recycled, and its production leads to deforestation.<br>
+
+        These Wood plastic composites extrusion profiles are widely used in Interior, Exterior, Furniture, Building &
+        Construction, etc. These products are widely using in<br> developed countries like Europe , USA , China , Japan
+        ,
+        Australia etc...<br>
+
+        The Wood Plastic Composite Extrusion Profiles can be replaced for wood and its has many advantages over
+        Wood.<br>
+
+        WPC combines the properties of wood and plastic offering a highly durable and surprisingly malleable material.
+        Builders, interior and exterior decorators and furniture<br> manufacturers are embracing this magic material
+        across
+        India in a big way. Civic authorities are exploring ways of using WPC in parks and other public properties<br>
+        which should withstand the vagaries of both natural forces and human vandalism.<br>
+
+        True to its form, WPC is resistant to moisture, rotting, corrosion resistant, aging resistant, Sound absorbing,
+        outstanding performance in energy-saving, acid-resistant,<br> crack resistance and splitting.
+        It is highly durable and requires low maintenance. It is processed like plastic but behaves like wood.<br>
+
+        Specialty Wood & Natural Composites (WPC) became a burgeoning, fast-growing, market demand for these hybrids has
+        been on the increase, especially in Interiors, <br>Exterior,Garden ,outdoor products,Agriculture
+        ,Furniture,Building
+        & Construction where these products are replacing , Wood ,metals , Aluminum and other heavy<br> weight
+        materials..
+      </p>
+    </div>
+
+    </p>
+
+  </div>
+  <div class="paragraphstyle">
+    <div class="floatLeft">
+
+
+
+      <p class="about">TECHNOLOGY</p>
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\WPC-Characteristics.jpg" alt="Logo 1" width="150" height="150" class="logo1">
+
+      </hr>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <ul class="footer-icons">
+      <li>
+        <i class="fab fa-facebook" title="Facebook"></i>
+      </li>
+      <li>
+        <i class="fab fa-twitter" title="Twitter"></i>
+      </li>
+      <li>
+        <i class="fab fa-vimeo" title="Vimeo"></i>
+      </li>
+      <li>
+        <i class="fab fa-tumblr" title="Tumblr"></i>
+      </li>
+      <li>
+        <i class="fab fa-delicious" title="Delicious"></i>
+      </li>
+    </ul>
+
+    <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\foot_logo.png" alt="logo" class="footer-image">
+    <span style="color: rgb(208, 208, 247); display: block; text-align: left; position: absolute; bottom: 100; left: 1;"
+      class="footer-text">@
+      2016 E3 Extrusion Inc. All Rights Reserved.</span>
+
+  </footer>
+
+</body>
+
+</html>

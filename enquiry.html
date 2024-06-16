@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>E3 WOODS</title>
+  <style>
+    .button1 {
+      border: none;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      margin: 12px 12px;
+      cursor: pointer;
+      background-color: #49c24d;
+      float: right;
+      position: relative;
+      bottom:40px;
+      right: 130px;
+      width: 190px;
+      height: 37px;
+      border-radius: 5px;
+ font-weight: bold;
+    }
+
+    .button2 {
+      border: none;
+      background: none;
+      color: rgba(111, 141, 28, 0.945);
+      padding: 10px 10px;
+      text-align: center;
+      font-weight: bold;
+      outline: none;
+      font-size: 12.5px;
+      cursor: pointer;
+      float: right;
+      position: relative;
+      bottom: -20px;
+      right: -160px;
+      font-weight:800;
+    }
+
+    #button1 {
+      padding: 10px 20px;
+      background-color: #e0e0e0;
+      color: green;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.9s, color 0.9s, border-color 0.9s;
+    }
+
+    .button1:hover {
+      background-color: white;
+      color: green;
+      border: 1.5px solid green;
+    }
+
+    .button1:focus {
+      outline: none;
+      background-color: green;
+      color: white;
+    }
+
+    .button2:hover {
+      color: rgb(139, 47, 4);
+    }
+
+  
+
+    body {
+      position: absolute;
+      left: 0px;
+      margin-top: 0;
+      padding-top: 0;
+      width: 100%;
+      overflow-x: hidden;
+      height: 100%;
+      background-color: hwb(43 79% 3%);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .floatLeft {
+      float: left;
+    }
+
+    .paragraphstyle {
+      width: 500px;
+      height: 700px;
+      font-size: 19px;
+      position: absolute;
+      top: 380px;
+      right: 0;
+      padding: 10px;
+      word-spacing: 5px;
+      line-height: 1.5;
+    }
+
+    
+    header {
+      width: 100%;
+      height: 0px;
+      background-color: #ffffff;
+
+      .header-box {
+        border-bottom: 2px solid rgba(151, 219, 23, 0.747);
+        border-top: 4px solid rgb(122, 158, 24);
+        height: 70px;
+        margin: -7px;
+        margin-left: -10px;
+        background: linear-gradient(to bottom , #ffffff 65%,#bbdde0c9);
+        padding: 20px;
+        background-blend-mode: overlay;
+        background-size: cover;
+
+      }
+
+
+      .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .left-image {
+      margin-left: 80px;
+      margin-top: -60px;
+    }
+
+    .right-image {
+      float: right;
+      position: absolute;
+      top: 10px;
+      left: 600px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 60px;
+      width: 100%;
+      height: 0%;
+      bottom: -250px;
+      position: relative;
+    }
+
+    .footer-image {
+      size: 10px;
+      position: absolute;
+      bottom: 17px;
+      left: 10px;
+    }
+
+    .footer-text {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+    }
+
+    .enquiry {
+      margin-left: 80px;
+      margin-top: 200px;
+      font-size: 20px;
+      width: 400px;
+    }
+
+    .contact {
+      position: absolute;
+      bottom: 400px;
+      right: 380px;
+      font-size: 21px;
+      color: #60920eb2;
+    }
+
+    hr {
+      position: relative;
+      top: -510px;
+      right: -320px;
+    }
+
+    iframe {
+      position: relative;
+      top: -500px;
+      right: -797px;
+    }
+
+    .footer-icons {
+      text-align: right;
+    }
+
+    .footer-icons li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+      top: -60px;
+      left: -80px;
+      font-size: 16px;
+      color: #ffffff2d;
+    }
+  </style>
+
+
+<script>
+  function redirectToHomePage() {
+  window.location.href = "  D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/home.html";
+
+}
+
+function redirectToAboutPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/about.html";
+}
+
+function redirectToProductsPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/products.html";
+}
+
+function redirectToTechnologyPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/technology.html";
+}
+
+function redirectToPhotogalleryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/photo%20gallery.html";
+}
+
+function redirectToMissionPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/mission.html";
+}
+
+function redirectToEnquiryPage() {
+  window.location.href = "D:/ANJANA AS PROJECTS/e3DynamoRegistration/e3-dynamo-registartion/src/components/enquiry.html";
+}
+
+</script>
+
+</head>
+<header class="main-header">
+  <div class="header-box">
+    <h1>
+      <button class="button button1">Enquire Now</button>
+
+      <button id="enquiryButton" class="button button2" onclick="redirectToEnquiryPage()">ENQUIRY</button>
+      <button id="missionButton" class="button button2"onclick="redirectToMissionPage()">MISSION</button>
+      <button id="photogalleryButtton" class="button button2" onclick="redirectToPhotogalleryPage()">PHOTO GALLERY</button>
+      <button id="technologyButton" class="button button2" onclick="redirectToTechnologyPage()">TECHNOLOGY</button>
+      <button id="productsButton" class="button button2" onclick="redirectToProductsPage()">PRODUCTS</button>
+      <button id="aboutButton" class="button button2" onclick="redirectToAboutPage()">ABOUT US</button>
+      <button id="homeButton" class="button button2" onclick="redirectToHomePage()">HOME</button>
+
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\logo.png" alt="logo1" class="left-image">
+      <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\save.png" alt="logo2" class="right-image">
+      
+    </h1>
+  </div>
+</header>
+
+<body>
+  <div class="enquiry" style="color: #60920eb2;">
+    <p><b>FOR ENQUIRY - CONTACT</b></p>
+  </div>
+  <input type="text" placeholder="Name (required)" style="width: 500px; height: 20px; margin-left: 79px;"><br>
+  <p></p>
+  <input type="text" placeholder="Mobile Number (required)" style="width: 500px; height: 20px; margin-left: 79px;"><br>
+  <p></p>
+  <input type="text" placeholder="E-mail (required)" style="width: 500px; height: 20px; margin-left: 79px;"><br>
+  <p></p>
+  <input type="text" placeholder="Subject" style="width: 500px; height: 20px; margin-left: 79px;"><br>
+  <p></p>
+  <textarea type="text" placeholder="Message" style="width: 500px; height: 300px; margin-left: 79px;"></textarea><br>
+
+  <p class="contact">CONTACT INFO</p>
+  <hr color="brown" width="380px">
+  <div class="paragraphstyle" style="color: rgba(26, 23, 21, 0.788);">
+    <p>
+
+      Ganesh.M <b>CEO.</b><br>
+      <b><u> Extrusion Inc.</u></b><br>
+      #273F , Rane Madras road,<br>
+      Hebbal Industrial area,<br>
+      Mysore- 570 018,<br>
+      Karnataka, India.<br>
+      <b>Mobil</b>e: +91 8722206921 <br>
+      <style>
+        .phone {
+          color: red;
+        }
+      </style>
+      <b>Mobile:</b> <span class="phone">+91 8722206921</span><br>
+      <style>
+        .phone {
+          color: red;
+        }
+      </style>
+      <b>Phone:</b> <span class="phone">+91 8212950921</span><br>
+      <style>
+        .phone {
+          color: red;
+        }
+      </style>
+      <b>E-mail:</b> <span class="phone"> ganesh@e3wood.com</span><br>
+      <b>Web</b> www.e3wood.com<br>
+    <p></p>
+    <br>
+    Bengaluru - Office<br>
+    <b><u> Extrusion Inc.</u></b><br>
+    #415, 11th Cross, 4th phase<br>
+    Peenya Industrial area<br>
+    Bengaluru-560 058,<br>
+    Karnataka<br>
+    India.<br>
+
+    <b>Mobil</b>e: +91 8722206921 <br>
+    <style>
+      .phone {
+        color: red;
+      }
+    </style>
+    <b>Mobile:</b> <span class="phone">+91 8722206932</span><br>
+    <style>
+      .phone {
+        color: red;
+      }
+    </style>
+    <b>Phone:</b> <span class="phone">+91 8041735691</span><br>
+    <style>
+      .phone {
+        color: red;
+      }
+    </style>
+    <b>E-mail:</b> <span class="phone">mktg@e3wood.com </span><br>
+    <b>Web</b> www.e3wood.com<br>
+
+    </p>
+  </div>
+
+  <div id="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15590.087393586391!2d76.595437!3d12.347937000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b354c36f303%3A0x792903e8c42ba0d0!2sE3%20EXTRUSION%20INC%20(%20E3%20Wood)!5e0!3m2!1sen!2sin!4v1687177942748!5m2!1sen!2sin"
+      width="400"  height="160" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+  
+    <button
+      style="font-weight: bold; color: white; background-color: rgba(0, 0, 0, 0.733); border: none; cursor: pointer;width: 100px; height: 30px; border-radius: 5px; font-size: 12px;">CLEAR
+      FORM</button>
+    <button
+      style="font-weight: bold; color: white; background-color: rgb(221, 10, 10); border: none; cursor: pointer;width: 70px; height: 30px; border-radius: 5px; font-size: 12px;">SUBMIT</button>
+  </div>
+
+  <footer>
+    <ul class="footer-icons">
+      <li><i class="fab fa-facebook"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-vimeo"></i></li>
+      <li><i class="fab fa-tumblr"></i></li>
+      <li><i class="fab fa-delicious"></i></li>
+    </ul>
+    <img src="D:\ANJANA AS PROJECTS\e3DynamoRegistration\e3-dynamo-registartion\src\components\images\foot_logo.png" alt="logo" class="footer-image">
+    <span style="color: rgb(208, 208, 247); display: block; text-align: left; position: absolute; bottom: 100; left: 1;"
+      class="footer-text">@
+      2016 E3 Extrusion Inc. All Rights Reserved.</span>
+  </footer>
+</body>
+</html>
